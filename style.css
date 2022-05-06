@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,300;1,400&display=swap');
+
+.event-card{
+    width: 100%;
+    border: 1px solid #F1F1F1;
+    border-radius: 8px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.event-card-image{
+    width: 100%;
+}
+
+.event-card-description{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event-card-description-info{
+    display: flex;
+    color: #000000;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
+    
+}
+
+.event-card-event-type{
+    color: blue;
+    font-weight: 600;
+}
+
+.event-grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 40px
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+    .event-grid-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 20px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 600px) {
+
+
+    .event-grid-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 20px;
+    }
+    
+  }
